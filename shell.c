@@ -2,7 +2,7 @@
 
 /**
  * sig_handler - function Prints a new
- * @execute: prompt upon a signal is recieved
+ * prompt upon a signal is recieved
  * @sig: signal received from user
  *
  * Return: void
@@ -15,6 +15,14 @@ void sig_handler(int sig)
 	signal(SIGINT, sig_handler);
 	write(STDIN_FILENO, new_prompt, 11);
 }
+
+/**
+* execute - handles prompt
+* @args: argument sector
+* @front: printed prompt
+*
+* Return: void
+*/
 
 int execute(char **args, char **front)
 {
@@ -67,10 +75,12 @@ int execute(char **args, char **front)
 }
 
 /**
- * main: entry point
+ * main: function that prints new line
  * @argc: argument counter
  * @argv: argument vector
- */
+ * Return: void
+*/
+
 int main(int argc, char *argv[])
 {
 	int ret = 0, retn;

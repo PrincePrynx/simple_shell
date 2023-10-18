@@ -74,7 +74,7 @@ int __exit(char **args, char **front)
  * @args: argument vector
  * @front: pointer to args.
  * Return: - 2 if directory is not found
- *        
+ *
  */
 int __cd(char **args, char __attribute__((__unused__)) **front)
 {
@@ -153,7 +153,7 @@ int __cd(char **args, char __attribute__((__unused__)) **front)
  * @front: pointer to args.
  * @args: argument
  * Return:  -1 on failure and 0 on sucess.
- *      
+ *
  */
 int __help(char **args, char __attribute__((__unused__)) **front)
 {
