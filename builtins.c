@@ -2,7 +2,7 @@
 
 /**
  * get_builtin - gets the builtin command input
- * 
+ *
  * @command: command
  * Return: builtin command.
  */
@@ -14,7 +14,7 @@ int (*get_builtin(char *command))(char **args, char **front)
 		{ "setenv", __setenv },
 		{ "unsetenv", __unsetenv },
 		{ "cd", __cd },
-		{ "alias",__alias },
+		{ "alias", __alias },
 		{ "help", __help },
 		{ NULL, NULL }
 	};
@@ -29,12 +29,12 @@ int (*get_builtin(char *command))(char **args, char **front)
 }
 
 /**
- * exit - leave program
+ * __exit - leave program
  * @args: argument vector
  * @front: pointer to  args.
  * Return: -3 if there is no argument.
- *         
- * 
+ *
+ *
  */
 int __exit(char **args, char **front)
 {
@@ -70,11 +70,11 @@ int __exit(char **args, char **front)
 }
 
 /**
- * cd - changes directories
+ * __cd - changes directories
  * @args: argument vector
  * @front: pointer to args.
  * Return: - 2 if directory is not found
- *         
+ *        
  */
 int __cd(char **args, char __attribute__((__unused__)) **front)
 {
@@ -149,10 +149,11 @@ int __cd(char **args, char __attribute__((__unused__)) **front)
 }
 
 /**
- * help -  help function
+ * __help -  help function
  * @front: pointer to args.
+ * @args: argument
  * Return:  -1 on failure and 0 on sucess.
- *       
+ *      
  */
 int __help(char **args, char __attribute__((__unused__)) **front)
 {
@@ -170,7 +171,7 @@ int __help(char **args, char __attribute__((__unused__)) **front)
 		help_setenv();
 	else if (_strcmp(args[0], "unsetenv") == 0)
 		help_unsetenv();
-	else if (_strcmp(args[ 0], "help") == 0)
+	else if (_strcmp(args[0], "help") == 0)
 		help_help();
 	else
 		write(STDERR_FILENO, name, _strlen(name));

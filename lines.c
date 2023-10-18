@@ -7,7 +7,7 @@
  */
 void handle_line(char **line, ssize_t read)
 {
-	char *old_line, *new_line,previous, current, next;
+	char *old_line, *new_line, previous, current, next;
 	size_t m, j;
 	ssize_t new_len;
 

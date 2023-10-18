@@ -9,7 +9,7 @@ int num_len(int num)
 {
 	unsigned int number1;
 	int length = 1;
-	
+
 	if (num < 0)
 	{
 		length = length + 1;

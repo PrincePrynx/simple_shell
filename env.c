@@ -1,9 +1,9 @@
 #include "prototypes.h"
 
 /**
- * ___env - prints environment
+ * __env - prints environment
  * @args: Argument vector
- * @front: pointer 
+ * @front: pointer
  *
  * Return: -1 on error and 0 on sucess.
  */

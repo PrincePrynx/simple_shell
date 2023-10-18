@@ -2,14 +2,14 @@
 
 /**
  * sig_handler - function Prints a new
- * prompt upon a signal is recieved
+ * @execute: prompt upon a signal is recieved
  * @sig: signal received from user
  *
  * Return: void
  */
 void sig_handler(int sig)
 {
-	char *new_prompt = "\n:)trukel$ ";
+	char *new_prompt = "\nprynx$ ";
 
 	(void)sig;
 	signal(SIGINT, sig_handler);
@@ -67,13 +67,15 @@ int execute(char **args, char **front)
 }
 
 /**
- *
+ * main: entry point
+ * @argc: argument counter
+ * @argv: argument vector
  */
 int main(int argc, char *argv[])
 {
 	int ret = 0, retn;
 	int *exe_ret = &retn;
-	char *prompt = ":)trukel$ ", *new_line = "\n";
+	char *prompt = "prynx$ ", *new_line = "\n";
 
 	name = argv[0];
 	hist = 1;

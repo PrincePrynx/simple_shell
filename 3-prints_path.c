@@ -46,7 +46,7 @@ char *get_location(char *command)
 /**
  * fill_path_dir - copies path
  * @path: path
- * 
+ *
  * Return: path copy
  */
 char *fill_path_dir(char *path)

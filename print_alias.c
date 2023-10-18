@@ -3,7 +3,7 @@
 /**
  * __alias - creates alias
  * @argv: argument vctor
- * @font: ouble pointer to argv
+ * @front: ouble pointer to argv
  * Return: -1 on failure, 0 on sucess
  */
 
@@ -50,7 +50,7 @@ int __alias(char **argv, char __attribute__((__unused__)) **front)
 
 /**
  * set_alias - sets alias
- * @va_name: variable name
+ * @var_name: variable name
  * @value: alias value
  */
 void set_alias(char *var_name, char *value)

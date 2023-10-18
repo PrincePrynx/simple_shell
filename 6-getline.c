@@ -85,7 +85,7 @@ void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b)
  * _getline - gets user input
  * @lineptr: buffer
  * @n: size of lineptr
- * @stream: input stream 
+ * @stream: input stream
  *
  * Return: number of characters gotten
  */
