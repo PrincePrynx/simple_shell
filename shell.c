@@ -75,7 +75,7 @@ int execute(char **args, char **front)
 }
 
 /**
- * main: function that prints new line
+ * main- function that prints new line
  * @argc: argument counter
  * @argv: argument vector
  * Return: void
